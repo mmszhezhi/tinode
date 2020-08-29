@@ -35,8 +35,8 @@ public class Utils {
     public static final String TINODE_IM_PROTOCOL = "Tinode";
 
     // Constants for accessing shared preferences
-    public static final String PREFS_HOST_NAME = "pref_hostName";
-    public static final String PREFS_USE_TLS = "pref_useTLS";
+    public static final String PREFS_HOST_NAME = "aloop.run:8889";
+    public static final String PREFS_USE_TLS = "false";
 
     /**
      * MIME-type used when storing a profile {@link ContactsContract.Data} entry.

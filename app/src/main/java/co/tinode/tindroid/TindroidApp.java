@@ -168,11 +168,12 @@ public class TindroidApp extends Application implements LifecycleObserver {
     public static String getDefaultHostName(Context context) {
         return context.getResources().getString(isEmulator() ?
                 R.string.emulator_host_name :
-                R.string.default_host_name);
+                R.string.tinode_url);
     }
 
     public static boolean getDefaultTLS() {
-        return !isEmulator();
+//        return !isEmulator();
+        return false;
     }
 
     public static void retainTinodeCache(Tinode tinode) {

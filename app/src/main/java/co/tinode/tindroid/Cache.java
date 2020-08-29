@@ -41,8 +41,8 @@ public class Cache {
             sTinode.setFndTypeOfMetaPacket(VxCard.class);
 
             // Set device language
-            sTinode.setLanguage(Locale.getDefault().toString());
-
+//            sTinode.setLanguage(Locale.getDefault().toString());
+            sTinode.setLanguage("english");
             // Keep in app to prevent garbage collection.
             TindroidApp.retainTinodeCache(sTinode);
         }

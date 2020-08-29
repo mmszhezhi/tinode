@@ -108,6 +108,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
         final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(parent);
         final String hostName = sharedPref.getString(Utils.PREFS_HOST_NAME, TindroidApp.getDefaultHostName(parent));
+//        final String hostName = String.valueOf(R.string.tinode_url);
         boolean tls = sharedPref.getBoolean(Utils.PREFS_USE_TLS, TindroidApp.getDefaultTLS());
         final Tinode tinode = Cache.getTinode();
             // This is called on the websocket thread.

@@ -81,6 +81,7 @@ public class ChatsActivity extends AppCompatActivity implements UiUtils.Progress
         super.onResume();
 
         final Tinode tinode = Cache.getTinode();
+        tinode.reconnectNow(true,false,true);
         mTinodeListener = new ContactsEventListener(tinode.isConnected());
         tinode.addListener(mTinodeListener);
 
